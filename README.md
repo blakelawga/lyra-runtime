@@ -27,7 +27,7 @@ To ensure settlement integrity, Lyra implements an on-chain verification layer. 
 
 ### Active Verifiers:
 * **Verifier 1:** `BH7asDZbKkTmT3UWiNfmMVRgQEEpXoVThGPmQfgWwDhg`
-* **Verifier 2:** `8M9BwRgSbVXmk843XDCgztkGgCotLUpkaW6qovZhk1QF`
+* **Verifier 2:** `4yt4EoNkhny2uQMZpTPVEJdkWFv7Mj2poeqHcEKgcqRZ`
 
 Lyra generates **Zero-Knowledge Proofs (zk-SNARKs)** of its data retrieval and Bayesian synthesis, which are then validated by the above addresses before the final market resolution is pushed to the exchange.
 
@@ -82,7 +82,7 @@ cd lyra
 
 ## [verification]verifiers 
     = ["BH7asDZbKkTmT3UWiNfmMVRgQEEpXoVThGPmQfgWwDhg",
-    "8M9BwRgSbVXmk843XDCgztkGgCotLUpkaW6qovZhk1QF"]
+    "4yt4EoNkhny2uQMZpTPVEJdkWFv7Mj2poeqHcEKgcqRZ"]
     cargo build --release --features="cuda_accel"
     ./target/release/lyra --contract-id "WILL-FED-HIKE-MAY" --live
 
