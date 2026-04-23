@@ -8,7 +8,7 @@
 <p align="center">
   A distributed, low-latency execution layer for autonomous event-settlement and Bayesian truth-verification in regulated prediction markets.
 </p>
-
+ 
 --- 
 
 ## Overview
