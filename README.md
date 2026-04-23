@@ -12,7 +12,7 @@
 ---   
  
 ## Overview
-
+ 
 **Lyra** is a specialized, local-first settlement engine designed for the **Kalshi** ecosystem. It is engineered for developers who require sub-millisecond data triangulation and deterministic market resolution without the overhead of centralized oracular consensus.
 
 Instead of relying on singular, fallible API endpoints, Lyra utilizes a **State-Space Search** model to map real-world entropy into binary finality ($S \to \{0, 1\}$). It collapses the infrastructure burden of event verification into a lightweight, high-performance runtime optimized for cold-start investigation and zero-trust auditability.
