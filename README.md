@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="400" alt="Lyra Logo" src="https://raw.githubusercontent.com/blakelawga/lyra-runtime/blob/main/lyra-syt.png">
+  <img width="400" alt="Lyra Logo" src="https://raw.githubusercontent.com/blakelawga/lyra-runtime/main/lyra-syt.png">
 </p>
 
 <h1 align="center"> Lyra-Core v2.1</h1>
