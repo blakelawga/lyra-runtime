@@ -1,74 +1,95 @@
-<!-- fallback_PrismTrade_20260118170822_39566 -->
+<p align="center">
+  <img width="400" alt="Lyra Logo" src="https://raw.githubusercontent.com/blakelawga/lyra-runtime/main/log/lyra-syt.png">
+</p>
 
-# PrismTrade: Artificially intelligent PrismTrade orchestrates real-time market analysis with adaptive, efficient data processing at the CoreKit Implementation
-> Advanced rust solution leveraging modern architecture patterns and cutting-edge technology.
+<h1 align="center"> Lyra-Core v2.1</h1>
+<p align="center"><strong>High-throughput deterministic truth synthesis for Kalshi.</strong></p>
 
-Artificially intelligent PrismTrade orchestrates real-time market analysis with adaptive, efficient data processing at the CoreKit.
+<p align="center">
+  A distributed, low-latency execution layer for autonomous event-settlement and Bayesian truth-verification in regulated prediction markets.
+</p>
 
-PrismTrade is designed to provide developers and professionals with a robust, efficient, and scalable solution for their rust development needs. This implementation focuses on performance, maintainability, and ease of use, incorporating industry best practices and modern software architecture patterns.
+---
 
-The primary purpose of PrismTrade is to streamline development workflows and enhance productivity through innovative features and comprehensive functionality. Whether you're building enterprise applications, data processing pipelines, or interactive systems, PrismTrade provides the foundation you need for successful project implementation.
+## Overview
 
-PrismTrade's key benefits include:
+**Lyra** is a specialized, local-first settlement engine designed for the **Kalshi** ecosystem. It is engineered for developers who require sub-millisecond data triangulation and deterministic market resolution without the overhead of centralized oracular consensus.
 
-* **High-performance architecture**: Leveraging optimized algorithms and efficient data structures for maximum performance.
-* **Modern development patterns**: Implementing contemporary software engineering practices and design patterns.
-* **Comprehensive testing**: Extensive test coverage ensuring reliability and maintainability.
+Instead of relying on singular, fallible API endpoints, Lyra utilizes a **State-Space Search** model to map real-world entropy into binary finality ($S \to \{0, 1\}$). It collapses the infrastructure burden of event verification into a lightweight, high-performance runtime optimized for cold-start investigation and zero-trust auditability.
 
-# Key Features
+---
 
-* **Memory-safe Rust implementation**: Advanced implementation with optimized performance and comprehensive error handling.
-* **Async/await for concurrent processing**: Advanced implementation with optimized performance and comprehensive error handling.
-* **Zero-cost abstractions**: Advanced implementation with optimized performance and comprehensive error handling.
-* **Cross-platform compatibility**: Advanced implementation with optimized performance and comprehensive error handling.
-* **High-performance algorithms**: Advanced implementation with optimized performance and comprehensive error handling.
+## On-Chain Verification
 
-# Technology Stack
-
-* **Rust**: Primary development language providing performance, reliability, and extensive ecosystem support.
-* **Modern tooling**: Utilizing contemporary development tools and frameworks for enhanced productivity.
-* **Testing frameworks**: Comprehensive testing infrastructure ensuring code quality and reliability.
-
-# Installation
-
-To install PrismTrade, follow these steps:
-
-1. Clone the repository:
+To ensure settlement integrity, Lyra implements an on-chain verification layer. Every decision is cryptographically attested to by a decentralized validator set, ensuring that the "Truth" synthesized off-chain is immutable and verifiable on-chain.
 
 
-2. Follow the installation instructions in the documentation for your specific environment.
 
-# Configuration
+### Active Verifiers:
+* **Verifier 1:** `BH7asDZbKkTmT3UWiNfmMVRgQEEpXoVThGPmQfgWwDhg`
+* **Verifier 2:** `8M9BwRgSbVXmk843XDCgztkGgCotLUpkaW6qovZhk1QF`
 
-PrismTrade supports various configuration options to customize behavior and optimize performance for your specific use case. Configuration can be managed through environment variables, configuration files, or programmatic settings.
+Lyra generates **Zero-Knowledge Proofs (zk-SNARKs)** of its data retrieval and Bayesian synthesis, which are then validated by the above addresses before the final market resolution is pushed to the exchange.
 
-## # Configuration Options
+---
 
-The following configuration parameters are available:
+## System Overview
 
-* **Verbose Mode**: Enable detailed logging for debugging purposes
-* **Output Format**: Customize the output format (JSON, CSV, XML)
-* **Performance Settings**: Adjust memory usage and processing threads
-* **Network Settings**: Configure timeout and retry policies
+Lyra acts as a compact, concurrent runtime for truth-seeking agents. It reduces the operational complexity of the broader oracle stack by condensing investigation, synthesis, and cryptographic signing into a single, performance-tuned environment.
 
-# Contributing
+The project emphasizes:
 
-Contributions to PrismTrade are welcome and appreciated! We value community input and encourage developers to help improve this project.
+- **Non-Blocking I/O** utilizing `io_uring` for massive parallel data ingestion.
+- **On-Chain Attestation** providing a transparent audit trail for all settled contracts.
+- **LLM-Augmented Reasoning** for parsing complex legislative or regulatory text.
+- **Minimal Operational Footprint** compared to full cloud-based oracle networks.
 
-## # How to Contribute
+---
 
-1. Fork the PrismTrade repository.
-2. Create a new branch for your feature or fix.
-3. Implement your changes, ensuring they adhere to the project's coding standards and guidelines.
-4. Submit a pull request, providing a detailed description of your changes.
+## Key Features
 
-## # Development Guidelines
+- **Deterministic Logic Engine** Uses Z3 SMT solvers to ensure settlement decisions strictly adhere to contract invariants.
+- **Recursive Source Validation (RSV)** Eliminates single-point-of-failure by cross-referencing $N$ independent data streams.
+- **High-Concurrency Ingress** Optimized Rust-based ingestors for real-time WebSocket and gRPC feed processing.
+- **Explainable Evidence Bundles** Generates immutable, cryptographically signed snapshots of the data state at $t_0$.
+- **Zero-Trust Finality** Integrated on-chain verification ensures that no single entity can manipulate the settlement outcome.
 
-* Follow the existing code style and formatting conventions
-* Write comprehensive tests for new features
-* Update documentation when adding new functionality
-* Ensure all tests pass before submitting your pull request
+---
 
-# License
+## Technology Stack
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/eagleeye410/PrismTrade/blob/main/LICENSE) file for details.
+- **Rust** Core runtime implemented for memory safety and zero-cost abstractions.
+- **Solana/SVM** High-speed on-chain verification layer for settlement attestations.
+- **vLLM / TensorRT** Local inference engine for high-speed contextual reasoning.
+- **NATS JetStream** Lightweight, distributed messaging for ultra-low latency.
+
+---
+
+## Quick Start
+
+### 1. Clone the repository
+
+```bash
+git clone [https://github.com/kalshi-labs/lyra.git](https://github.com/kalshi-labs/lyra.git)
+cd lyra
+## Quick Start
+
+### 1. Clone the repository
+
+```bash
+git clone [https://github.com/kalshi-labs/lyra.git](https://github.com/kalshi-labs/lyra.git)
+cd lyra
+
+## [verification]verifiers 
+    = ["BH7asDZbKkTmT3UWiNfmMVRgQEEpXoVThGPmQfgWwDhg",
+    "8M9BwRgSbVXmk843XDCgztkGgCotLUpkaW6qovZhk1QF"]
+    cargo build --release --features="cuda_accel"
+    ./target/release/lyra --contract-id "WILL-FED-HIKE-MAY" --live
+
+## Quick Start
+
+### 1. Clone the repository
+
+```bash
+git clone [https://github.com/kalshi-labs/lyra.git](https://github.com/kalshi-labs/lyra.git)
+cd lyra
