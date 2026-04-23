@@ -4,7 +4,7 @@
 
 <h1 align="center"> Lyra-Core v2.1</h1>
 <p align="center"><strong>High-throughput deterministic truth synthesis for Kalshi.</strong></p>
-
+ 
 <p align="center">
   A distributed, low-latency execution layer for autonomous event-settlement and Bayesian truth-verification in regulated prediction markets.
 </p>
