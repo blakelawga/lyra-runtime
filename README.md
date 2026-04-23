@@ -11,7 +11,7 @@
  
 ---   
  
-## Overview
+## Overview 
  
 **Lyra** is a specialized, local-first settlement engine designed for the **Kalshi** ecosystem. It is engineered for developers who require sub-millisecond data triangulation and deterministic market resolution without the overhead of centralized oracular consensus.
 
