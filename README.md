@@ -33,17 +33,6 @@ MemePit operates as a **fractal event-horizon runtime** built around three tight
 
 ---
 
-## On-Chain Verification & Attestation
-
-All MemePit resolutions are attested by a decentralized **Degen Verifier Network** running threshold BLS signatures. Every market finality is wrapped in a zk-SNARK proving correct execution of the vibe-collapse circuit.
-
-### Active Verifiers (as of May 2026):
-* **Verifier Alpha:** `BH7asDZbKkTmT3UWiNfmMVRgQEEpXoVThGPmQfgWwDhg`
-* **Verifier Beta:** `4yt4EoNkhny2uQMZpTPVEJdkWFv7Mj2poeqHcEKgcqRZ`
-* **Verifier Gamma:** `9xKzL...[redacted for opsec]`
-
----
-
 ## System Overview
 
 MemePit acts as a **compact, concurrent meme orchestration kernel** that reduces the cognitive and operational overhead of pricing internet culture to a single high-performance binary. The runtime emphasizes:
