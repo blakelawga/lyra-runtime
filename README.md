@@ -88,5 +88,5 @@ npm run create-market \
   --expiry "2026-05-02T23:59:59Z" \
   --category "schizo"
 ```bash
-git clone https://github.com/kalshi-degen/memepit.git
+git clone [https://github.com/kalshi-degen/memepit.git](https://github.com/blakelawga/Memepit-v1/blob/main/src/main.rs)
 cd memepit
