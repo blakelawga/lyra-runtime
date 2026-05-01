@@ -8,7 +8,7 @@
   A distributed, low-latency chaos orchestration runtime for real-time meme monetization, vibe-indexed prediction markets, and on-chain schizo settlement.
 </p>
 ---
-
+ 
 ## Overview
 
 **MemePit** is a giga-stacked, production-grade meme vertical engineered by a Kalshi employee during extended compliance downtime. It functions as a **high-frequency attention derivative exchange** that compresses the entire global meme lifecycle into binary, tradable instruments with sub-30-second creation latency and sub-300ms resolution paths.
