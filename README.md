@@ -1,67 +1,67 @@
 <p align="center">
-  <img width="400" alt="Lyra Logo" src="https://raw.githubusercontent.com/blakelawga/lyra-runtime/main/lyra-syt.png">
+  <img width="420" alt="MemePit Logo" src="https://raw.githubusercontent.com/kalshi-degen/memepit/main/assets/memepit-banner.png">
 </p>
 
-<h1 align="center"> Lyra-Core v2.1</h1>
-<p align="center"><strong>High-throughput deterministic truth synthesis for Kalshi.</strong></p>
- 
+<h1 align="center">MemePit</h1>
+<p align="center"><strong>High-velocity meme monetization layer for Kalshi.</strong></p>
 <p align="center">
-  A distributed, low-latency execution layer for autonomous event-settlement and Bayesian truth-verification in regulated prediction markets.
+  The official (and completely unsanctioned) degenerate vertical where the timeline gets priced, ratio’d, and liquidated in real time.
 </p>
- 
----   
- 
-## Overview 
- 
-**Lyra** is a specialized, local-first settlement engine designed for the **Kalshi** ecosystem. It is engineered for developers who require sub-millisecond data triangulation and deterministic market resolution without the overhead of centralized oracular consensus.
-
-Instead of relying on singular, fallible API endpoints, Lyra utilizes a **State-Space Search** model to map real-world entropy into binary finality ($S \to \{0, 1\}$). It collapses the infrastructure burden of event verification into a lightweight, high-performance runtime optimized for cold-start investigation and zero-trust auditability.
 
 ---
 
-## On-Chain Verification
+## Overview
 
-To ensure settlement integrity, Lyra implements an on-chain verification layer. Every decision is cryptographically attested to by a decentralized validator set, ensuring that the "Truth" synthesized off-chain is immutable and verifiable on-chain.
+**MemePit** is a high-throughput, chaos-optimized prediction market runtime built by a Kalshi employee who got bored during compliance review. 
 
+It turns pure internet schizophrenia into tradable binary contracts with sub-60-second resolution windows. No more waiting for quarterly earnings — bet on whether the next viral tweet hits 500k likes before lunch, if the current main character will be canceled by EOD, or which Solana cat coin rugs first.
 
+MemePit collapses the entire attention economy into a **single low-latency execution layer** where vibes are the oracle, wojaks are the UI, and liquidation is guaranteed.
 
-### Active Verifiers:
-* **Verifier 1:** `BH7asDZbKkTmT3UWiNfmMVRgQEEpXoVThGPmQfgWwDhg`
-* **Verifier 2:** `4yt4EoNkhny2uQMZpTPVEJdkWFv7Mj2poeqHcEKgcqRZ`
+---
 
-Lyra generates **Zero-Knowledge Proofs (zk-SNARKs)** of its data retrieval and Bayesian synthesis, which are then validated by the above addresses before the final market resolution is pushed to the exchange.
+## Core Philosophy
+
+- Truth is whatever gets the most YES volume before expiry.
+- Every market must be at least 40% unhinged.
+- Compliance is a suggestion, not a feature.
+- If regulators don’t side-eye it, it’s not working hard enough.
 
 ---
 
 ## System Overview
 
-Lyra acts as a compact, concurrent runtime for truth-seeking agents. It reduces the operational complexity of the broader oracle stack by condensing investigation, synthesis, and cryptographic signing into a single, performance-tuned environment.
+MemePit operates as a **real-time meme settlement engine** that ingests signals from Twitter, TikTok, 4chan, and group chats, then surfaces the most degenerate contracts possible.
 
-The project emphasizes:
-
-- **Non-Blocking I/O** utilizing `io_uring` for massive parallel data ingestion.
-- **On-Chain Attestation** providing a transparent audit trail for all settled contracts.
-- **LLM-Augmented Reasoning** for parsing complex legislative or regulatory text.
-- **Minimal Operational Footprint** compared to full cloud-based oracle networks.
+It emphasizes:
+- **Hyper-short expiry** (minutes to 48 hours)
+- **Vibe-Based Resolution** powered by community voting + on-chain snapshots
+- **Schizo Market Creation** — any user can spin up a contract in <30 seconds
+- **Live Heatmap** of what’s currently pumping in the meme meta
+- **Degen Leaderboards** with public PNL and shame badges
 
 ---
 
 ## Key Features
 
-- **Deterministic Logic Engine** Uses Z3 SMT solvers to ensure settlement decisions strictly adhere to contract invariants.
-- **Recursive Source Validation (RSV)** Eliminates single-point-of-failure by cross-referencing $N$ independent data streams.
-- **High-Concurrency Ingress** Optimized Rust-based ingestors for real-time WebSocket and gRPC feed processing.
-- **Explainable Evidence Bundles** Generates immutable, cryptographically signed snapshots of the data state at $t_0$.
-- **Zero-Trust Finality** Integrated on-chain verification ensures that no single entity can manipulate the settlement outcome.
+- **Instant Market Launcher** — Drop a tweet link + “Will this hit 1M likes?” and it’s live.
+- **Meme Oracle Network** — A decentralized council of degens + Grok + community upvotes for resolution.
+- **Wojak Liquidation Engine** — Automatic market close + payout when the meme dies.
+- **Rug Score™** — Real-time probability that a trending coin is about to zero.
+- **Ratio Insurance** — Bet against your own tweet getting flamed.
+- **CEO Meltdown Market** — Weekly contract on which founder will post the most regarded tweet.
+- **Dark Mode Only** with animated pepe cursors.
 
 ---
 
 ## Technology Stack
 
-- **Rust** Core runtime implemented for memory safety and zero-cost abstractions.
-- **Solana/SVM** High-speed on-chain verification layer for settlement attestations.
-- **vLLM / TensorRT** Local inference engine for high-speed contextual reasoning.
-- **NATS JetStream** Lightweight, distributed messaging for ultra-low latency.
+- **Next.js + Tailwind** — Because it had to ship yesterday
+- **Supabase + Redis** — For that sweet real-time degen experience
+- **Grok + Claude** — LLM judges for borderline market approval
+- **Twitter API + Firehose** — Primary truth source (until it breaks)
+- **Solana Pay** — Optional on-chain settlement for the truly regarded
+- **Framer Motion** — Smooth wojak animations on every resolution
 
 ---
 
@@ -69,27 +69,14 @@ The project emphasizes:
 
 ### 1. Clone the repository
 
+npm install
+npm run dev
+
+# Example: Will this tweet get ratio'd before midnight?
+npm run create-market \
+  --title "Will @dril tweet something more regarded than usual tonight?" \
+  --expiry "2026-05-02T23:59:59Z" \
+  --category "schizo"
 ```bash
-git clone [https://github.com/kalshi-labs/lyra.git](https://github.com/kalshi-labs/lyra.git)
-cd lyra
-## Quick Start
-
-### 1. Clone the repository
-
-```bash
-git clone [https://github.com/kalshi-labs/lyra.git](https://github.com/kalshi-labs/lyra.git)
-cd lyra
-
-## [verification]verifiers 
-    = ["BH7asDZbKkTmT3UWiNfmMVRgQEEpXoVThGPmQfgWwDhg",
-    "4yt4EoNkhny2uQMZpTPVEJdkWFv7Mj2poeqHcEKgcqRZ"]
-    cargo build --release --features="cuda_accel"
-    ./target/release/lyra --contract-id "WILL-FED-HIKE-MAY" --live
-
-## Quick Start
-
-### 1. Clone the repository
-
-```bash
-git clone [https://github.com/kalshi-labs/lyra.git](https://github.com/kalshi-labs/lyra.git)
-cd lyra
+git clone https://github.com/kalshi-degen/memepit.git
+cd memepit
