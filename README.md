@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="420" alt="MemePit Logo" src="https://raw.githubusercontent.com/kalshi-degen/memepit/main/assets/memepit-banner.png">
+  <img width="520" alt="MemePit Logo" src="https://i.ibb.co/SwGN6DbG/image.png">
 </p>
 
 <h1 align="center">MemePit</h1>
@@ -7,7 +7,6 @@
 <p align="center">
   A distributed, low-latency chaos orchestration runtime for real-time meme monetization, vibe-indexed prediction markets, and on-chain schizo settlement.
 </p>
-
 ---
 
 ## Overview
