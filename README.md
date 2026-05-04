@@ -1,21 +1,4 @@
-<p align="center">
-  <img width="520" alt="MemePit Logo" src="https://i.ibb.co/SwGN6DbG/image.png">
-</p>
 
-<h1 align="center">MemePit</h1>
-<p align="center"><strong>Hyper-velocity attention economy execution layer for Kalshi.</strong></p>
-<p align="center">
-  A distributed, low-latency chaos orchestration runtime for real-time meme monetization, vibe-indexed prediction markets, and on-chain schizo settlement.
-</p>
----
- 
-## Overview
-
-**MemePit** is a giga-stacked, production-grade meme vertical engineered by a Kalshi employee during extended compliance downtime. It functions as a **high-frequency attention derivative exchange** that compresses the entire global meme lifecycle into binary, tradable instruments with sub-30-second creation latency and sub-300ms resolution paths.
-
-Instead of legacy oracle architectures, MemePit implements a **Multi-Modal Vibe-State Collapse Engine** that maps raw cultural entropy (Twitter firehose + TikTok temporal graphs + 4chan thread velocity + Discord sentiment streams) into deterministic binary finality ($V \rightarrow \{0, 1\}$) via recursive attention-weighted Bayesian synthesis. The system collapses the full stack of internet schizophrenia into a single, zero-trust execution environment optimized for maximum degeneracy with regulatory plausible deniability.
-
----
 
 ## Core Architecture
 
@@ -66,27 +49,3 @@ MemePit acts as a **compact, concurrent meme orchestration kernel** that reduces
 - **NATS JetStream + Temporal** — Workflow orchestration for multi-stage meme lifecycles.
 - **eBPF + Prometheus + Grafana** — Observability for meme velocity anomalies.
 
----
-
-## Quick Start
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/kalshi-degen/memepit.git
-cd memepit
-
-## Quick Start
-
-### 1. Clone the repository
-
-npm install
-npm run dev
-
-# Example: Will this tweet get ratio'd before midnight?
-npm run create-market \
-  --title "Will @dril tweet something more regarded than usual tonight?" \
-  --expiry "2026-05-02T23:59:59Z" \
-  --category "schizo"
-```bash
-git clone [https://github.com/kalshi-degen/memepit.git](https://github.com/blakelawga/Memepit-v1/blob/main/src/main.rs)
-cd memepit
